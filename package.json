@@ -1,7 +1,6 @@
 {
   "name": "@heat/unit-of-work",
-  "main": "index",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "license": "MIT",
   "private": false,
   "repository": {
@@ -13,19 +12,11 @@
   },
   "scripts": {
     "test": "./node_modules/.bin/jest",
-    "build": "node ./cli/build.js",
-    "patch": "yarn publish --patch",
-    "minor": "yarn publish --minor",
-    "major": "yarn publish --major",
-    "prepublish": "bash ./build.sh",
-    "postpublish": "yarn cleanup",
-    "cleanup": "rm -rf ./js;"
+    "deploy": "yarn version; ./node_modules/.bin/ncp"
   },
   "dependencies": {},
   "devDependencies": {
-    "babel-core": "^6.26.3",
-    "babel-plugin-transform-es2015-modules-commonjs": "^6.26.2",
-    "coffeescript": "^2.3.1"
+    "@heat/npm-coffee-publisher": "^0.1.3"
   },
   "peerDependencies": {
     "aws-sdk": "^2.424.0"
