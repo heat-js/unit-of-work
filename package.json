@@ -1,6 +1,6 @@
 {
   "name": "@heat/unit-of-work",
-  "version": "0.0.3",
+  "version": "0.0.5",
   "license": "MIT",
   "private": false,
   "repository": {
@@ -16,7 +16,7 @@
   },
   "dependencies": {},
   "devDependencies": {
-    "@heat/npm-coffee-publisher": "^0.1.3"
+    "@heat/npm-coffee-publisher": "^0.1.6"
   },
   "peerDependencies": {
     "aws-sdk": "^2.424.0"
