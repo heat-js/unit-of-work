@@ -1,0 +1,33 @@
+{
+  "name": "@heat/unit-of-work",
+  "main": "index",
+  "version": "0.0.1",
+  "license": "MIT",
+  "private": false,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/heat-js/unit-of-work.git"
+  },
+  "bugs": {
+    "url": "https://github.com/heat-js/unit-of-work/issues"
+  },
+  "scripts": {
+    "test": "./node_modules/.bin/jest",
+    "build": "node ./cli/build.js",
+    "patch": "yarn publish --patch",
+    "minor": "yarn publish --minor",
+    "major": "yarn publish --major",
+    "prepublish": "bash ./build.sh",
+    "postpublish": "yarn cleanup",
+    "cleanup": "rm -rf ./js;"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-plugin-transform-es2015-modules-commonjs": "^6.26.2",
+    "coffeescript": "^2.3.1"
+  },
+  "peerDependencies": {
+    "aws-sdk": "^2.424.0"
+  }
+}

@@ -1,0 +1,7 @@
+*.coffee
+build.sh
+/src
+/test
+/.idea
+/examples
+/cli
