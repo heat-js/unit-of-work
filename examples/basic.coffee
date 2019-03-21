@@ -1,9 +1,9 @@
 
 
-app.factory 'users', (transaction) ->
+app.factory 'users', (app, transaction) ->
 	return new UserRepo app.dynamodb, transaction
 
-app.factory 'books', (transaction) ->
+app.factory 'books', (app, transaction) ->
 	return new BookRepo app.dynamodb, transaction
 
 
