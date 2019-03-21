@@ -37,7 +37,7 @@ export default class DynamoDbTransaction
 		if not items.length
 			return
 
-		return @dynamodb.transactWrite {
+		return @db.transactWrite {
 			TransactItems: items
 		}
 		.promise()
