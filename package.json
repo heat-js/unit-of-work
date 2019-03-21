@@ -1,6 +1,6 @@
 {
   "name": "@heat/unit-of-work",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "license": "MIT",
   "private": false,
   "repository": {
@@ -12,6 +12,9 @@
   },
   "scripts": {
     "test": "./node_modules/.bin/jest",
+    "patch": "yarn version --patch; ./node_modules/.bin/ncp",
+    "minor": "yarn version --minor; ./node_modules/.bin/ncp",
+    "major": "yarn version --major; ./node_modules/.bin/ncp",
     "deploy": "yarn version; ./node_modules/.bin/ncp"
   },
   "dependencies": {},
