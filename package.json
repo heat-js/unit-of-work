@@ -17,11 +17,19 @@
     "major": "yarn version --major; ./node_modules/.bin/ncp",
     "deploy": "yarn version; ./node_modules/.bin/ncp"
   },
+  "jest": {
+    "preset": "jest-preset-coffeescript",
+    "testEnvironment": "node",
+    "rootDir": "./test/"
+  },
   "dependencies": {},
   "devDependencies": {
-    "@heat/npm-coffee-publisher": "^0.1.6"
+    "@heat/container": "^0.0.1",
+    "@heat/npm-coffee-publisher": "^0.1.6",
+    "@heat/test": "^0.2.34",
+    "aws-sdk": "^2.548.0"
   },
   "peerDependencies": {
-    "aws-sdk": "^2.424.0"
+    "aws-sdk": ">= 2.424.0"
   }
 }

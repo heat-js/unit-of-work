@@ -1,0 +1,30 @@
+UsersTable:
+  Type: AWS::DynamoDB::Table
+
+  Properties:
+    TableName: users
+    BillingMode: PAY_PER_REQUEST
+
+    AttributeDefinitions:
+      - AttributeName: id
+        AttributeType: S
+
+    KeySchema:
+      - AttributeName: id
+        KeyType: HASH
+
+
+BooksTable:
+  Type: AWS::DynamoDB::Table
+
+  Properties:
+    TableName: books
+    BillingMode: PAY_PER_REQUEST
+
+    AttributeDefinitions:
+      - AttributeName: id
+        AttributeType: S
+
+    KeySchema:
+      - AttributeName: id
+        KeyType: HASH
