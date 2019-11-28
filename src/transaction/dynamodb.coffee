@@ -4,7 +4,7 @@ import crypto from 'crypto'
 export default class DynamoDbTransaction
 
 	count: 0
-	limit: 10
+	limit: 25
 
 	constructor: (@db) ->
 		@queries = {
