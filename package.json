@@ -27,7 +27,7 @@
     "@heat/container": "^0.0.1",
     "@heat/npm-coffee-publisher": "^0.1.6",
     "@heat/test": "^0.2.34",
-    "aws-sdk": "^2.548.0"
+    "aws-sdk": "^2.814.0"
   },
   "peerDependencies": {
     "aws-sdk": ">= 2.424.0"
